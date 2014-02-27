@@ -1,6 +1,6 @@
 # except
 
-A function that returns a copy of the plain object given as first argument but without the keys provided as the other argument(s).
+A utility function that returns a copy of the object given as first argument but without the keys provided as the other argument(s).
 
 
 ## Installation
@@ -24,6 +24,8 @@ except(myobj, 'foo')             // => { bar: 1, baz: 'yes' }
 except(myobj, 'foo', 'baz')      // => { bar: 1 }
 except(myobj, ['foo', 'bar'])    // => { baz: 'yes' }
 ```
+
+Note that the `except` function assumes that `Array.prototype.indexOf` ist available.
 
 
 ## Contributing
