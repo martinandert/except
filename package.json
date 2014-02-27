@@ -1,6 +1,6 @@
 {
   "name": "except",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A function that returns a copy of the plain object given as first argument but without the keys provided as the other argument(s)",
   "main": "index.js",
   "scripts": {
@@ -25,8 +25,7 @@
     "email": "mandert@gmail.com"
   },
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "^1.17.1",
     "jshint": "^2.4.4"
