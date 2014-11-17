@@ -25,8 +25,6 @@ except(myobj, 'foo', 'baz')      // => { bar: 1 }
 except(myobj, ['foo', 'bar'])    // => { baz: 'yes' }
 ```
 
-Note that the `except` function assumes that `Array.prototype.indexOf` ist available.
-
 
 ## Contributing
 
