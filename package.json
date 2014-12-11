@@ -29,7 +29,7 @@
     "indexof": "0.0.1"
   },
   "devDependencies": {
-    "mocha": "^1.17.1",
-    "jshint": "^2.4.4"
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1"
   }
 }

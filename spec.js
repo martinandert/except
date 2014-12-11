@@ -28,18 +28,3 @@ describe('except', function() {
     assert.deepEqual(except(new Obj(), 'bar'), { foo: 1, baz: 3 });
   });
 });
-
-
-/*
-var result;
-    result = _.omit({a:1, b:2, c:3}, 'b');
-    ok(_.isEqual(result, {a:1, c:3}), 'can omit a single named property');
-    result = _.omit({a:1, b:2, c:3}, 'a', 'c');
-    ok(_.isEqual(result, {b:2}), 'can omit several named properties');
-    result = _.omit({a:1, b:2, c:3}, ['b', 'c']);
-    ok(_.isEqual(result, {a:1}), 'can omit properties named in an array');
-
-    var Obj = function(){};
-    Obj.prototype = {a: 1, b: 2, c: 3};
-    ok(_.isEqual(_.omit(new Obj, 'b'), {a:1, c: 3}), 'include prototype props');
-*/

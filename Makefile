@@ -6,8 +6,8 @@ test: lint
 lint:
 	@$(BIN)/jshint index.js
 
-install link:
-	@npm $@
+install:
+	npm install
 
 release-patch: test
 	@$(call release,patch)
@@ -23,5 +23,5 @@ publish:
 	npm publish
 
 define release
-	npm version $(1) --message 'release %s'
+	npm version $(1) -m 'release v%s'
 endef
