@@ -1,10 +1,10 @@
 BIN = ./node_modules/.bin
 
 test: lint
-	@$(BIN)/mocha -t 5000 -b -R spec spec.js
+	node --test spec.ts
 
 lint:
-	@$(BIN)/jshint index.js
+	@$(BIN)/prettier --check index.ts spec.ts
 
 install:
 	npm install

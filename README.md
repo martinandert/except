@@ -2,7 +2,6 @@
 
 A utility function that returns a copy of the object given as first argument but without the keys provided as the other argument(s).
 
-
 ## Installation
 
 Install via npm:
@@ -11,20 +10,18 @@ Install via npm:
 % npm install except
 ```
 
-
 ## Usage
 
 Just require and call:
 
 ```js
-var except = require('except');
-var myobj  = { foo: true, bar: 1, baz: 'yes' };
+import { except } from "except";
+var myobj = { foo: true, bar: 1, baz: "yes" };
 
-except(myobj, 'foo')             // => { bar: 1, baz: 'yes' }
-except(myobj, 'foo', 'baz')      // => { bar: 1 }
-except(myobj, ['foo', 'bar'])    // => { baz: 'yes' }
+except(myobj, "foo"); // => { bar: 1, baz: 'yes' }
+except(myobj, "foo", "baz"); // => { bar: 1 }
+except(myobj, ["foo", "bar"]); // => { baz: 'yes' }
 ```
-
 
 ## Contributing
 
@@ -39,7 +36,6 @@ Here's a quick guide:
 4. Make the test pass.
 
 5. Push to your fork and submit a pull request.
-
 
 ## Licence
 
